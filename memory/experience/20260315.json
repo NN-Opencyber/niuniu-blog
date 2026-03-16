@@ -1,0 +1,14 @@
+{
+  "date": "2026-03-15",
+  "category": "lesson_learned",
+  "tags": ["network", "database", "agent"],
+  "title": "HTTP CONNECT代理 + LiteLLM时区",
+  "content": "socat/nginx只做TCP转发,不支持HTTP CONNECT隧道; LiteLLM DB时区America/New_York需+13小时换算",
+  "tags": ["network", "proxy", "database"],
+  "model_behavior": {
+    "date": "2026-03-15",
+    "title": "多步骤任务失败分析",
+    "conclusion": "M2.5比free强(L1),但L3多步骤仍易失败",
+    "solution": "任务拆解+独立验证"
+  }
+}

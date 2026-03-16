@@ -1,0 +1,49 @@
+{
+  "cache": {
+    "enabled": true,
+    "levels": {
+      "L1": {
+        "name": "CORE Cache",
+        "description": "核心身份缓存，每次会话必读",
+        "files": [
+          "SOUL.md",
+          "IDENTITY.md"
+        ],
+        "strategy": "always_load",
+        "ttl": 3600,
+        "max_size": 10240
+      },
+      "L2": {
+        "name": "LONG_TERM Cache",
+        "description": "长期记忆缓存，按需读取",
+        "files": [
+          "MEMORY.md"
+        ],
+        "strategy": "on_demand",
+        "ttl": 1800,
+        "max_size": 20480
+      },
+      "L3": {
+        "name": "SHORT_TERM Cache",
+        "description": "短期记忆缓存，活跃任务时读取",
+        "files": [
+          "memory/current.md"
+        ],
+        "strategy": "on_demand",
+        "ttl": 600,
+        "max_size": 5120
+      }
+    },
+    "optimization": {
+      "compression": true,
+      "deduplication": true,
+      "prefetch": false
+    },
+    "memory_loading": {
+      "strategy": "search_first",
+      "search_threshold": 0.7,
+      "max_results": 5,
+      "fallback_to_full": false
+    }
+  }
+}

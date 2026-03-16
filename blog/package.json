@@ -1,0 +1,19 @@
+{
+  "name": "xiaoxi-blog",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "deploy": "powershell -ExecutionPolicy Bypass -File deploy.ps1"
+  },
+  "dependencies": {
+    "@astrojs/rss": "^4.0.15",
+    "astro": "^5.17.1"
+  },
+  "devDependencies": {
+    "remark": "^15.0.1",
+    "unist-util-visit": "^5.1.0"
+  }
+}

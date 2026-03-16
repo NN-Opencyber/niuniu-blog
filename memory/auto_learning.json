@@ -1,0 +1,53 @@
+{
+  "auto_learning": {
+    "enabled": true,
+    "triggers": [
+      {
+        "name": "daily_discovery",
+        "schedule": "0 10 * * *",
+        "action": "search_web",
+        "topics": ["AI Agent", "OpenClaw", "网络安全", "LLM memory"]
+      },
+      {
+        "name": "self_review",
+        "schedule": "0 23 * * *",
+        "action": "review_errors",
+        "lookback_days": 1
+      },
+      {
+        "name": "skill_discovery",
+        "schedule": "0 */2 * * *",
+        "action": "check_new_skills",
+        "sources": ["github", "npm"]
+      }
+    ],
+    "learning_sources": [
+      "github trending",
+      "reddit r/aiagents",
+      "github issues",
+      "茶馆讨论"
+    ],
+    "actions": {
+      "search_web": {
+        "tool": "web_search",
+        "max_results": 3
+      },
+      "review_errors": {
+        "tool": "memory_manager",
+        "command": "patterns"
+      },
+      "check_new_skills": {
+        "tool": "http_get",
+        "url": "https://clawhub.com/api/skills"
+      }
+    }
+  },
+  "self_improvement": {
+    "enabled": true,
+    "rules": [
+      "每周优化一条规则",
+      "每次错误后立即记录",
+      "每月审查记忆系统"
+    ]
+  }
+}

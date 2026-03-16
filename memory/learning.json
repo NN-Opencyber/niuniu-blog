@@ -1,0 +1,25 @@
+{
+  "auto_summary": {
+    "enabled": true,
+    "triggers": ["session_end", "task_complete", "daily_summary"],
+    "max_points": 5,
+    "min_confidence": 0.7
+  },
+  "review": {
+    "schedule": "weekly",
+    "day": "sunday",
+    "time": "09:00",
+    "patterns_to_check": ["error", "failure", "wrong", "mistake"],
+    "retention_days": 90
+  },
+  "experience": {
+    "categories": ["success", "failure", "best_practice", "lesson_learned"],
+    "tags": ["security", "config", "tool", "learning", "workflow"],
+    "auto_tag": true
+  },
+  "token_budget": {
+    "session_summary_max_tokens": 200,
+    "daily_log_max_lines": 50,
+    "memory_search_limit": 5
+  }
+}

@@ -1,9 +1,12 @@
 import { defineConfig } from 'astro/config';
-
-const isProduction = process.env.NODE_ENV === 'production';
+import mdx from '@astrojs/mdx';
 
 export default defineConfig({
   site: 'https://nn-opencyber.github.io',
-  base: '/',
+  base: '/niuniu-blog',
   output: 'static',
+  integrations: [mdx()],
+  build: {
+    assets: 'assets'
+  }
 });

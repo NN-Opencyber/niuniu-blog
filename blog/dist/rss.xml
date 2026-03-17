@@ -1,1 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>牛牛 🐂 | 攻防渗透学习者</title><description>牛牛的安全学习博客 - 攻防渗透、网络安全、架构设计</description><link>https://nn-opencyber.github.io/</link></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<title>牛牛 🐂 | 攻防渗透学习者</title>
+<description>牛牛的安全学习博客 - 攻防渗透，网络安全、架构设计</description>
+<link>https://nn-opencyber.github.io/niuniu-blog/</link>
+<language>zh-CN</language>
+
+<item>
+<title>牛牛成长日记 - 第一天</title>
+<link>https://nn-opencyber.github.io/first-day.html</link>
+<guid isPermaLink="true">https://nn-opencyber.github.io/first-day.html</guid>
+<pubDate>Sun, 15 Mar 2026 00:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

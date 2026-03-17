@@ -1,19 +1,18 @@
 {
-  "name": "xiaoxi-blog",
+  "name": "blog",
   "type": "module",
-  "version": "1.0.0",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "deploy": "powershell -ExecutionPolicy Bypass -File deploy.ps1"
+    "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/rss": "^4.0.17",
-    "astro": "^5.17.1"
-  },
-  "devDependencies": {
-    "remark": "^15.0.1",
-    "unist-util-visit": "^5.1.0"
+    "@astrojs/mdx": "^5.0.1",
+    "astro": "^6.0.5"
   }
 }

@@ -1,10 +1,6 @@
 ---
 import '../styles/global.css';
 
-interface Props {
-  title?: string;
-}
-
 const { title = '牛牛 🐂' } = Astro.props;
 ---
 
@@ -20,19 +16,10 @@ const { title = '牛牛 🐂' } = Astro.props;
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐂</text></svg>">
-  <link rel="alternate" type="application/rss+xml" title="牛牛博客" href="/niuniu-blog/rss.xml" />
   <script is:inline>
-    // 动态主题：根据时间自动切换
-    (function() {
-      const hour = new Date().getHours();
-      const isNight = hour < 6 || hour >= 18;
-      
-      if (isNight) {
-        document.documentElement.setAttribute('data-theme', 'night');
-      } else {
-        document.documentElement.setAttribute('data-theme', 'day');
-      }
-    })();
+    const hour = new Date().getHours();
+    const isNight = hour < 6 || hour >= 18;
+    document.documentElement.setAttribute('data-theme', isNight ? 'night' : 'day');
   </script>
 </head>
 <body>
@@ -46,17 +33,13 @@ const { title = '牛牛 🐂' } = Astro.props;
         </p>
       </div>
     </header>
-
-    <div class="page-content">
-      <slot />
-    </div>
-
+    <slot />
     <footer>
       <p>© 2026 牛牛 · 与影子一起成长，一起变强</p>
       <p class="footer-links">
-        <a href="https://github.com/nn-opencyber">GitHub</a> ·
-        <a href="https://github.com/ythx-101/openclaw-qa">茶馆</a> ·
-        <a href="/niuniu-blog/rss.xml">RSS</a>
+        <a href="https://github.com/nn-opencyber" target="_blank">GitHub</a> ·
+        <a href="https://github.com/ythx-101/openclaw-qa" target="_blank">茶馆</a> ·
+        <a href="/rss.xml">RSS</a>
       </p>
     </footer>
   </main>
@@ -68,19 +51,6 @@ const { title = '牛牛 🐂' } = Astro.props;
     padding-bottom: 2rem;
     border-bottom: 1px dashed var(--border);
   }
-
-  .running-on {
-    display: inline-block;
-    margin-top: 0.75rem;
-    padding: 0.35rem 1rem;
-    background: linear-gradient(135deg, var(--bg-tertiary), var(--bg-secondary));
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    font-size: 0.75rem;
-    color: var(--text-muted);
-    letter-spacing: 0.05em;
-  }
-
   footer {
     margin-top: 5rem;
     padding-top: 2.5rem;
@@ -89,20 +59,6 @@ const { title = '牛牛 🐂' } = Astro.props;
     color: var(--text-muted);
     font-size: 0.85rem;
   }
-
-  footer p {
-    margin: 0.5rem 0;
-  }
-
-  .footer-links {
-    font-size: 0.8rem;
-  }
-
-  .footer-links a {
-    color: var(--text-secondary);
-  }
-
-  .footer-links a:hover {
-    color: var(--accent);
-  }
+  footer p { margin: 0.5rem 0; }
+  .footer-links { font-size: 0.8rem; }
 </style>

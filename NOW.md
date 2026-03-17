@@ -19,4 +19,6 @@
 - 博客排版简化（去掉花哨效果，更清爽）✅
 
 ## 新增增量
-- [ ]
+- GPT-5 (OpenAI Codex OAuth) 配置完成，token有效期9天
+- 博客RSS路径修复（/niuniu-blog/）
+- 博客重新部署成功

@@ -7,19 +7,13 @@
         "title": {
           "type": "string"
         },
+        "slug": {
+          "type": "string"
+        },
         "date": {
           "type": "string"
         },
         "preview": {
-          "type": "string"
-        },
-        "tags": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "category": {
           "type": "string"
         },
         "$schema": {
@@ -28,8 +22,8 @@
       },
       "required": [
         "title",
-        "date",
-        "preview"
+        "slug",
+        "date"
       ],
       "additionalProperties": false
     }

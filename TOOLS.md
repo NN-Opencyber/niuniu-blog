@@ -25,7 +25,13 @@
 - `trash` > `rm`
 - 凭据信息绝对不发出
 
+## 常见错误
+- edit 工具失败：oldText 必须与文件内容完全一致（包括空格、换行）。先 read 确认再 edit。
+
 ## 关联（独立管理）
 - 命令库: commands/
 - 技能库: skills/
 - 记忆系统: memory/ + MEMORY.md + NOW.md
+
+## Skill 调用规则
+- **token-stats**: 必须调用 skill 输出固定格式，不能直接 python ~/.openclaw/scripts/token_stats.py

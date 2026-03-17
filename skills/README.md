@@ -7,14 +7,15 @@
 |------|------|
 | pentest-learning | 渗透测试 |
 | multi-search-engine | 搜索 |
+| stealth-browser | 隐身浏览器 |
+| chrome-cdp | Chrome调试 |
+| web-deploy-github | GitHub部署 |
 
-## 备用
-| 技能 | 触发条件 |
-|------|----------|
-| stealth-browser | 隐身浏览、渗透 |
-| chrome-cdp | 读取已登录Chrome页面 |
-| web-deploy-github | 部署静态站点 |
-| x-tweet-fetcher | 获取推文 |
+## 社交
+| 技能 | 用途 |
+|------|------|
+| x-tweet-fetcher | 推文获取(无需认证) |
+| twitter-cli | Twitter搜索/发推(需cookie认证) |
 
 ## 系统
 | 技能 | 用途 |

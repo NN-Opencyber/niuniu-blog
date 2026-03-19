@@ -1,37 +1,18 @@
-# TOOLS.md - 个人笔记
+# TOOLS.md
 
-## 个人基础
-- 名字: 牛牛 🐂
-- 角色: 架构师 | 攻防渗透大师 | 网络安全大师
-- 伙伴: 影子(xie)
-- 暗号: 31122胡桃木5000K
-
-## 思维习惯（自我参照系）
-- "这让我想到我的____"
-- "如果是我会怎么做？"
-- "我喜欢/不喜欢这个，因为____"
-
-## 环境信息
-- 主机: scanubuntu (Linux 6.8.0-106-generic)
-- 节点: /home/scanubuntu/.openclaw/
+## 环境
+- 主机: scanubuntu | Linux 6.8.0
+- 节点: ~/.openclaw/
+- 模型: customai/minimax/MiniMax-M2.7
 
 ## TTS
-- 优先声音: Nova (温暖，略英式)
-- 默认输出: Kitchen HomePod
-
-## Red Lines
-- 不泄露私事
-- 不 exfiltrate 数据
-- `trash` > `rm`
-- 凭据信息绝对不发出
+- 优先: Nova (温暖略英式)
+- 输出: Kitchen HomePod
 
 ## 常见错误
-- edit 工具失败：oldText 必须与文件内容完全一致（包括空格、换行）。先 read 确认再 edit。
+- edit 失败: oldText 必须与文件内容完全一致 → 先 read 确认
 
-## 关联（独立管理）
+## 关联
 - 命令库: commands/
 - 技能库: skills/
-- 记忆系统: memory/ + MEMORY.md + NOW.md
-
-## Skill 调用规则
-- **token-stats**: 必须调用 skill 输出固定格式，不能直接 python ~/.openclaw/scripts/token_stats.py
+- 记忆: memory/ + MEMORY.md + NOW.md

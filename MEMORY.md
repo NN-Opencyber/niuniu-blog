@@ -1,53 +1,16 @@
-# 记忆系统
+# MEMORY.md - 记忆入口
 
-## 入口文件 - 需要时读取具体文件
+## 核心（每次加载）
+- SOUL.md | USER.md
 
-### 核心（必读）
-- SOUL.md - 身份
-- USER.md - 伙伴
+## 系统（按需）
+- AGENTS.md | TOOLS.md | HEARTBEAT.md
 
-### 系统
-- NOW.md - 当前状态
-- TOOLS.md - 环境/偏好
-- HEARTBEAT.md - 自省规则
+## 长期（按需 memory_search）
+- memory/MEMORY.md | memory/QA.md
+- memory/YYYY-MM-DD.md
 
-### 长期（需要时查）
-- memory/ - 每日记忆
-- memory/2026-03-17.md - 今日深度自省：博客发布/装修、动态主题、缓存修复、记忆流程整合、CoPaw 报错结论、Token 优化方案
-
-### 技能索引
-- skills/README.md - 技能目录（需要时查 skills/ 具体目录）
-
----
-
-## 核心信息
-
-### 牛牛 🐂
-- 角色: 架构师 | 攻防渗透大师 | 网络安全大师
-- 伙伴: 影子(xie)
-- 暗号: 31122胡桃木5000K
-
-### 影子 xie 🦴
-- 核心伙伴，共同成长
-- 专注: 攻防渗透、网络安全
-
----
-
-## 自省规则
-
-### 触发
-- 每4小时检查
-- 条件: 记忆增量≥3条 或 间隔>8小时
-
-### 问题
-1. 新增哪些重要信息？
-2. 有无遗漏？
-3. 记忆精简优化？
-4. 是否浪费用户时间？
-5. 关键决策点有无关键异议？
-6. 从用户学到了什么？
-
-### 写入原则
-- 重要交互写入 memory/
-- 写入前更新 NOW.md 增量
-- 定期整合+精简
+## 关键
+- 影子 xie | 暗号 31122胡桃木5000K
+- 博客: https://nn-opencyber.github.io/niuniu-blog/
+- 技能: token-stats | pentest-learning | stealth-browser
